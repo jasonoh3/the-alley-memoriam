@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#title-button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#background img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#moon img {
+    padding: 10vh 10vw;
+    width: auto;
+    height: 10%;
+    opacity: 80%;
+    right: 0;
+}
+
+#cloud img {
+    padding: 32vh 0 0 0;
+    width: 4000px;
+    height: auto;
+    animation: cloud 300s linear infinite;
+    opacity: 50%;
+    position: relative;
+}
+
+@keyframes cloud {
+    100% {
+        transform: translate(-2087.5px, 0);
+    }
+}
+
+#foreground img {
+    width: 4000px;
+    padding: 7vh 0 0 0;
+    animation: foreground 20s linear infinite;
+}
+
+@keyframes foreground {
+    100% {
+        transform: translate(-2002px, 0);
+    }
+}
+
+#leaf img {
+    display: inline-block;
+    width: 20px;
+    transform: skew(20deg);
+    animation: leaf 8s 0s infinite;
+}
+
+#leaf {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -50px;
+}
+
+@keyframes leaf {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 30%;
+    }
+    20% {
+        transform: translate(-300px, 30vh) rotate(90deg);
+    }
+    45% {
+        transform: translate(100px, 50vh) rotate(0deg);
+    }
+    75% {
+        transform: translate(-400px, 70vh) rotate(90deg);
+        opacity: 100%;
+    }
+    100% {
+        opacity: 50%;
+        transform: translate(-100px, 83.5vh) rotate(40deg);
+    }
+}
+
+#leaf img:nth-of-type(1) {
+    animation-delay: 2s;
+}
+#leaf img:nth-of-type(2) {
+    animation-delay: 0s;
+}
+#leaf img:nth-of-type(3) {
+    animation-delay: 1.5s;
+}
+#leaf img:nth-of-type(4) {
+    animation-delay: 5.4s;
+}
+#leaf img:nth-of-type(5) {
+    animation-delay: 3.2s;
+}
+#leaf img:nth-of-type(6) {
+    animation-delay: 1.8s;
+}
+#leaf img:nth-of-type(7) {
+    animation-delay: 6.2s;
+}
+
+#rat {
+    background: url("../images/8-bit/rat3.png") no-repeat;
+    width: 180px;
+    height: 115px;
+    position: absolute;
+    bottom: 23vh;
+    left: 10vw;
+    animation: rat 0.50s steps(2) infinite;
+}
+
+@keyframes rat {
+    from {
+        background-position: 30px;
+    }
+    to {
+        background-position: -349px;
+    }
+}
