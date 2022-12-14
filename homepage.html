@@ -1,19 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap">
-        <script defer src="app.js"></script>
+        <link rel="stylesheet" href="./css/homepage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./img/rbn-logo-official.png">
+        <script defer src="js/app.js"></script>
     </head>
     <body>
         <nav class="navbar">
             <ul class="nav-container">
                 <li class="nav-item">
-                    <a href="./main.html" class="nav-link">
+                    <a href="./homepage.html" class="nav-link">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 176.532 176.532" style="enable-background:new 0 0 176.532 176.532;" xml:space="preserve">
                             <g class="svg-primary">
                                 <path d="M152.928,85.912l-59.89-49.406c-2.771-2.287-6.773-2.287-9.545,0l-59.89,49.406c-1.728,1.425-2.728,3.546-2.728,5.785v74.544c0,4.143,3.357,7.5,7.5,7.5h119.779c4.143,0,7.5-3.357,7.5-7.5V91.697C155.656,89.458,154.656,87.337,152.928,85.912z M96.196,158.741H80.336v-41.524h15.859V158.741z M140.656,158.741h-29.46v-49.024c0-4.143-3.357-7.5-7.5-7.5H72.836c-4.143,0-7.5,3.357-7.5,7.5v49.024h-29.46V95.233l52.39-43.219l52.39,43.219V158.741z"/>
@@ -97,57 +99,61 @@
                                         <path d="M52.952,60.452c-1.919,0-3.839-0.732-5.303-2.197L30.406,41.013c-2.929-2.929-2.929-7.677,0-10.606c2.929-2.929,7.678-2.93,10.606,0l17.243,17.242c2.929,2.929,2.929,7.677,0,10.606C56.791,59.72,54.872,60.452,52.952,60.452z"/>
                                     </g>
                                 </svg>
-                                <span class="link-text">Light/Dark</span>
+                                <span class="link-text remove-highlight">Light/Dark</span>
                             </div>
                     </label>
                 </li>
             </ul>
         </nav>
         <main>
-            <div class="main-container">
-                <p>Hi! This website is dedicated to save the memories of <b>The Alley</b>!</p>
-                <div class="slider-container">
-                    <div class="slider">
-                        <div class="slides">
-                            <input type="radio" name="radio-button" id="radio1" onclick="setScrollCounter(1)"/>
-                            <input type="radio" name="radio-button" id="radio2" onclick="setScrollCounter(2)"/>
-                            <input type="radio" name="radio-button" id="radio3" onclick="setScrollCounter(3)"/>
-                            <input type="radio" name="radio-button" id="radio4" onclick="setScrollCounter(4)"/>
+            <div class="title-container">
+                <h1 class="title">THE ALLEY</h1>
+            </div>
+            <div class="line"></div>
+            <div class="slider-container remove-highlight">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-button" id="radio1" onclick="setScrollCounter(1)"/>
+                        <input type="radio" name="radio-button" id="radio2" onclick="setScrollCounter(2)"/>
+                        <input type="radio" name="radio-button" id="radio3" onclick="setScrollCounter(3)"/>
+                        <input type="radio" name="radio-button" id="radio4" onclick="setScrollCounter(4)"/>
 
-                            <div class="slide first">
-                                <img src="images/slider/0002.jpg" alt=""/>
-                            </div>
-                            <div class="slide">
-                                <img src="images/slider/0001.jpg" alt=""/>
-                            </div>
-                            <div class="slide">
-                                <img src="images/slider/0003.jpg" alt=""/>
-                            </div>
-                            <div class="slide">
-                                <img src="images/slider/0004.jpg" alt=""/>
-                            </div>
+                        <div class="slide first">
+                            <img src="img/slider/0002.jpg" alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/slider/0001.jpg" alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/slider/0003.jpg" alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/slider/0004.jpg" alt=""/>
+                        </div>
 
-                            <div class="auto-scroll">
-                                <div class="auto-button1"></div>
-                                <div class="auto-button2"></div>
-                                <div class="auto-button3"></div>
-                                <div class="auto-button4"></div>
-                            </div>
+                        <div class="auto-scroll">
+                            <div class="auto-button1"></div>
+                            <div class="auto-button2"></div>
+                            <div class="auto-button3"></div>
+                            <div class="auto-button4"></div>
+                        </div>
 
-                            <div class="manual-scroll">
-                                <label for="radio1" class="manual-button" id="scrollradio1"></label>
-                                <label for="radio2" class="manual-button" id="scrollradio2"></label>
-                                <label for="radio3" class="manual-button" id="scrollradio3"></label>
-                                <label for="radio4" class="manual-button" id="scrollradio4"></label>
-                            </div>
+                        <div class="manual-scroll">
+                            <label for="radio1" class="manual-button" id="scrollradio1"></label>
+                            <label for="radio2" class="manual-button" id="scrollradio2"></label>
+                            <label for="radio3" class="manual-button" id="scrollradio3"></label>
+                            <label for="radio4" class="manual-button" id="scrollradio4"></label>
+                        </div>
 
-                            <div class="manual-arrows">
-                                <input type="button" name="manual-button" id="arrow1" onclick="decrementCounter()"/>
-                                <input type="button" name="manual-button" id="arrow2" onclick="incrementCounter()"/>
-                            </div>
+                        <div class="manual-arrows">
+                            <input type="button" name="manual-button" id="arrow1" onclick="decrementCounter()"/>
+                            <input type="button" name="manual-button" id="arrow2" onclick="incrementCounter()"/>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="main-body"> <!-- TODO class-->
+                <p class="main-text">Hi! This website is dedicated to save the memories of <b>The Alley</b>! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum minima cupiditate maxime nobis eligendi veniam dolore eum modi quisquam possimus excepturi, maiores tempora. Deserunt totam quasi exercitationem placeat blanditiis reprehenderit sapiente. Et explicabo nostrum aspernatur distinctio omnis iste doloribus eveniet harum labore cupiditate culpa porro praesentium, ratione facilis dicta ipsam beatae. Neque aut quaerat omnis inventore et, magnam laborum. Provident voluptatem, voluptatum unde qui impedit pariatur ipsa possimus architecto? Autem obcaecati repellendus et, est vero blanditiis. Suscipit itaque, accusantium rerum provident magni laudantium, omnis perferendis incidunt veritatis quidem nisi, excepturi repudiandae ad corrupti. Sequi aperiam, asperiores laudantium distinctio consequuntur beatae.</p>
             </div>
         </main>
     </body>
