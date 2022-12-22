@@ -1,18 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    -ms-overflow-style: none;
 }
-  
-Hide scrollbar for IE and Edge
-*::-webkit-scrollbar {
-    display: none;
+
+body {
+    overflow: hidden;
 }
 
 main {
     height: 100vh;
     width: 100%;
-    overflow: hidden;
 }
 
 .remove-highlight {

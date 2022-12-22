@@ -11,10 +11,10 @@
 }
 
 .light {
-    --text-primary: #566984;
-    --text-secondary: white;
+    --text-primary: #fce6d0;
+    --text-secondary: #fdfbd0;
     --text-tertiary: white;
-    --bg-primary: #f6f8fa;
+    --bg-primary: #96658e;
     --bg-secondary: #24292f;
     --bg-tertiary: #31373f;
 }
@@ -61,7 +61,7 @@ main {
 }
 
 .line {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid;
     margin: 2rem 0;
 }
 
@@ -74,10 +74,10 @@ main {
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-family: 'Bebas Neue';
     width: 100vw;
-    margin: 3rem 0 0.5rem 0;
+    margin: 2rem 0 -0.5rem 0;
     text-align: center;
 }
 
@@ -170,7 +170,7 @@ main {
 }
 
 .svg-primary {
-    fill: #ff7eee;
+    fill: #6496fe;
 }
 
 input[id=checkbox] {
@@ -192,7 +192,7 @@ input[id=checkbox] {
     height: 500px;
     border-radius: 10px;
     border-style: solid;
-    border-color: #24292f;
+    border-color: var(--text-primary);
     overflow: hidden;
 }
 
@@ -225,7 +225,7 @@ input[id=checkbox] {
 }
 
 .manual-button {
-    border: 2px solid white;
+    border: 2px solid var(--text-secondary);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -237,7 +237,7 @@ input[id=checkbox] {
 }
 
 .manual-button:hover {
-    background: white;
+    background: var(--text-primary);
 }
 
 #radio1:checked ~ .first {
@@ -265,7 +265,7 @@ input[id=checkbox] {
 }
 
 .auto-scroll div {
-    border: 2px solid white;
+    border: 2px solid var(--text-primary);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -276,19 +276,19 @@ input[id=checkbox] {
 }
 
 #radio1:checked ~ .auto-scroll .auto-button1 {
-    background: white;
+    background: var(--text-primary);
 }
 
 #radio2:checked ~ .auto-scroll .auto-button2 {
-    background: white;
+    background: var(--text-primary);
 }
 
 #radio3:checked ~ .auto-scroll .auto-button3 {
-    background: white;
+    background: var(--text-primary);
 }
 
 #radio4:checked ~ .auto-scroll .auto-button4 {
-    background: white;
+    background: var(--text-primary);
 }
 
 .manual-arrows {
@@ -297,17 +297,20 @@ input[id=checkbox] {
 }
 
 #arrow1, #arrow2 {
-    cursor: pointer;
     border: none;
+    background: none;
+}
+
+#svg-arrow1, #svg-arrow2 {
+    fill: var(--text-primary);
     width: 2em;
-    height: 2em;
-    background: url(../img/slider/arrow.svg);
+    height: auto;
 }
 
-#arrow1 {
-    transform: rotate(-90deg) scale(3) translate(-80px, 5px);
+#svg-arrow1 {
+    transform: scale(3) translate(5px, 75px);
 }
 
-#arrow2 {
-    transform: rotate(90deg) scale(3) translate(82.5px, -245px);
+#svg-arrow2 {
+    transform: rotate(180deg) scale(3) translate(-241px, -75px);
 }
