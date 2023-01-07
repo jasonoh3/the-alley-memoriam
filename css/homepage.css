@@ -11,7 +11,7 @@
 }
 
 .light {
-    --text-primary: #fce6d0;
+    --text-primary: #ffffff;
     --text-secondary: #fdfbd0;
     --text-tertiary: white;
     --bg-primary: #96658e;
@@ -37,7 +37,7 @@
 }
 
 body::-webkit-scrollbar {
-    width: 0.25rem;
+    width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -77,19 +77,21 @@ main {
     font-size: 5rem;
     font-family: 'Bebas Neue';
     width: 100vw;
-    margin: 2rem 0 -0.5rem 0;
+    margin: 1rem 0 -1.5rem 0;
     text-align: center;
 }
 
 /* main text body */
 .main-body {
     display: flex;
-    margin: 0;
-    padding: 2.5rem 5rem;
+    margin: -3rem 0;
+    padding: 0 5rem;
 }
 
 .main-text {
-
+    font-size: 2rem;
+    font-family: 'Berlin Sans FB';
+    width: 100vw;
 }
 
 
@@ -170,7 +172,7 @@ main {
 }
 
 .svg-primary {
-    fill: #6496fe;
+    fill: #993EFF;
 }
 
 input[id=checkbox] {
@@ -184,7 +186,9 @@ input[id=checkbox] {
     justify-content: center;
     margin-top: 20vh;
     margin: 0;
-    padding: 0;
+    padding: 2em 0;
+    background: #A2769A;
+    border-radius: 10px;
 }
 
 .slider {
